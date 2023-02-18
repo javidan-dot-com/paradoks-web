@@ -1,9 +1,9 @@
-import { style } from "@mui/system";
+
+import { Typography } from "@mui/material";
 import styles from "./navbar.module.css";
-// import Icon from "././public/logo.svg";
-//import Icon from "././public/logo.svg";
 
 function Navbar() {
+
   return (
     <>
       <nav className={styles.nav}>
@@ -12,13 +12,33 @@ function Navbar() {
         </a>
         <ul>
           <li>
-            <a href="/home">home</a>
+            <a href="/home">
+              <Typography
+                variant="h6"
+              >
+                Home
+              </Typography>
+            </a>
           </li>
+
           <li>
-            <a href="/articles">articles</a>
+            <a href="/articles">
+              <Typography
+                variant="h6"
+              >
+                Articles
+              </Typography>
+            </a>
           </li>
+
           <li>
-            <a href="/karta">karta</a>
+            <a href="/karta">
+              <Typography
+                variant="h6"
+              >
+                Karta
+              </Typography>
+            </a>
           </li>
         </ul>
       </nav>

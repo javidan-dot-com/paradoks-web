@@ -1,13 +1,32 @@
+
+import { Typography } from "@mui/material";
 import styles from "./main.module.css";
 
 function Main() {
+
+  const headingText = {
+    brand: "paradoks, ",
+    slogan: "dünyaya fərqli perspektivdən baxan bir platforma",
+  }
+
   return (
     <>
       <div className={styles.main}>
         <div className={styles.main1}>
-          <p>
-            <b>paradoks</b>, dünyaya fərqli perspektivdən baxan bir platforma
-          </p>
+          {
+            <>
+              <Typography
+                variant="h5"
+              >
+                <Typography component={"span"} variant="h5" sx={{
+                  fontWeight: 700,
+                }}>
+                  {headingText.brand}
+                </Typography>
+                {headingText.slogan}
+              </Typography>
+            </>
+          }
         </div>
         <div className={styles.main2}></div>
         <div className={styles.main3}></div>

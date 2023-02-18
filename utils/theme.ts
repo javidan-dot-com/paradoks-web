@@ -1,3 +1,4 @@
+
 import { createTheme } from '@mui/material/styles';
 import { green, purple } from '@mui/material/colors';
 
@@ -12,16 +13,7 @@ const theme = createTheme({
     },
     typography: {
         fontFamily: [
-            '-apple-system',
-            '"Futura PT"',
-            'BlinkMacSystemFont',
-            'Roboto',
-            '"Helvetica Neue"',
-            'Arial',
-            'sans-serif',
-            '"Apple Color Emoji"',
-            '"Segoe UI Emoji"',
-            '"Segoe UI Symbol"',
+            '"Futura PT, sans-serif"',
         ].join(','),
     },
 });
