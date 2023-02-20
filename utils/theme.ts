@@ -1,21 +1,32 @@
 
-import { createTheme } from '@mui/material/styles';
-import { green, purple } from '@mui/material/colors';
+import { green, purple, grey } from '@mui/material/colors';
+import { PaletteMode } from '@mui/material';
 
-const theme = createTheme({
+export const getDesignTokens = (mode: PaletteMode) => ({
     palette: {
-        primary: {
-            main: purple[500],
-        },
-        secondary: {
-            main: green[500],
-        },
-    },
-    typography: {
-        fontFamily: [
-            '"Futura PT, sans-serif"',
-        ].join(','),
+        mode,
+        ...(mode === 'light'
+            ? {
+                // palette values for light mode
+                primary: {
+                    main: grey[900],
+                },
+                divider: purple[200],
+                text: {
+                    primary: purple[900],
+                    secondary: purple[800],
+                },
+            }
+            : {
+                // palette values for dark mode
+                primary: {
+                    main: grey[100],
+                },
+                divider: green[200],
+                text: {
+                    primary: green[900],
+                    secondary: green[800],
+                },
+            }),
     },
 });
-
-export default theme;
