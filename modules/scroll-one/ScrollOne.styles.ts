@@ -12,8 +12,15 @@ export const ScrollOneContainerStyles = (theme: Theme) => ({
   flexDirection: "column",
   justifyContent: "center",
   justifyItems: "center",
-  height: "884px",
-  width: "100%",
+  height: "700px",
+  width: "1322px",
   backgroundColor: "#C7F5FF",
   padding: "2rem",
 });
+
+export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
+  position: "relative",
+  width: "725px",
+  height: "82px",
+  backgroundColor: "white",
+})

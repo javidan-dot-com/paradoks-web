@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { ScrollOneStyles, ScrollOneContainerStyles } from "./ScrollOne.styles";
+import { ScrollOneStyles, ScrollOneContainerStyles, ScrollOneHeaderContainerStyles } from "./ScrollOne.styles";
 import Image from "next/image";
 
 const ScrollOne = () => {
@@ -13,38 +13,36 @@ const ScrollOne = () => {
   return (
     <Box sx={(theme) => ScrollOneContainerStyles(theme)}>
       <Box
-        sx={{
-          position: "absolute",
-          width: "725px",
-          height: "82px",
-          left: "357.5px",
-          top: "256px",
-        }}
+        sx={(theme) => ScrollOneHeaderContainerStyles(theme)}
       >
         <Typography
           variant="h6"
-          component={"span"}
-          sx={(theme) => ScrollOneStyles(theme)}
+          sx={{
+            fontSize: "36px",
+          }}
         >
-          {headingText.brand}
-          <Typography variant="h6">{headingText.slogan}</Typography>
+          <Typography
+            sx={
+              (theme) => ScrollOneStyles(theme)
+            }
+            component="span"
+          >
+            {headingText.brand}
+          </Typography>
+          {headingText.slogan}
         </Typography>
       </Box>
 
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "flex-end",
-
+          position: "relative",
+          justifyContent: "flex-start",
+          flexDirection: "row",
           border: "1px solid white",
-
-          width: "651.5px",
-          height: "159.5px",
-          left: "-0.5px",
-          top: "200px",
-          backgroundColor: "white",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "yellow",
           color: "white",
         }}
       >
@@ -56,23 +54,35 @@ const ScrollOne = () => {
             height={513}
           />
         </Box>
-        <Typography
+
+        <Box
           sx={{
-            width: "473px",
-            height: "87px",
-            left: "calc(50% - 473px/2 - 3.5px)",
-            top: "calc(50% - 87px/2)",
-            fontFamily: "Inter",
-            fontStyle: "normal",
-            fontWeight: "400",
-            fontSize: "19px",
-            lineHeight: "29px",
-            bgColor: "white",
-            color: "black",
+            position: "absolute",
+            bottom: "20px",
+            right: "60px",
+            width: "500px",
+            height: "100px",
+            backgroundColor: "white",
           }}
         >
-          {headingText.secondSlogan}
-        </Typography>
+          <Typography
+            sx={{
+              width: "473px",
+              height: "87px",
+              left: "calc(50% - 473px/2 - 3.5px)",
+              top: "calc(50% - 87px/2)",
+              fontFamily: "Inter",
+              fontStyle: "normal",
+              fontWeight: "400",
+              fontSize: "19px",
+              lineHeight: "29px",
+              bgColor: "white",
+              color: "black",
+            }}
+          >
+            {headingText.secondSlogan}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
