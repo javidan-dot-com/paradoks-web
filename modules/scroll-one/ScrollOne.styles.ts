@@ -4,15 +4,24 @@ export const ScrollOneStyles = (theme: Theme) => ({
   fontWeight: 700,
   color: theme.palette.primary.main,
   fontFamily: theme.typography.fontFamily,
+  fontSize: "26px",
 });
 
 export const ScrollOneContainerStyles = (theme: Theme) => ({
   display: "flex",
   flexDirection: "column",
-  // alignItems: "start",
   justifyContent: "center",
   justifyItems: "center",
-  height: "884px",
-  width: "100%",
-  backgroundColor: theme.palette.background.default,
+  height: "700px",
+  width: "1322px",
+  backgroundColor: "#C7F5FF",
+  padding: "2rem",
+});
+
+export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
+  position: "relative",
+  width: "546px",
+  height: "101px",
+  backgroundColor: "#C7F5FF",
+  left: "316px",
 });

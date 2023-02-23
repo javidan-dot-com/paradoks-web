@@ -25,8 +25,8 @@ const ScrollThree = () => {
         <Image
           src="/images/imageScrollThree.png"
           alt="Image Scroll Three"
-          width={850}
-          height={455}
+          width={699}
+          height={402}
         />
       </Box>
     </Box>
