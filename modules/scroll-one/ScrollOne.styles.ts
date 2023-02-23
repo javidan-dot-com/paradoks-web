@@ -20,7 +20,8 @@ export const ScrollOneContainerStyles = (theme: Theme) => ({
 
 export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
   position: "relative",
-  width: "725px",
-  height: "82px",
-  backgroundColor: "white",
-})
+  width: "546px",
+  height: "101px",
+  backgroundColor: "#C7F5FF",
+  left: "316px",
+});
