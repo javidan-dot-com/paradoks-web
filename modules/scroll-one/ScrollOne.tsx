@@ -59,7 +59,7 @@ const ScrollOne = () => {
             top: "357px",
             right: "104px",
             width: "555px",
-            height: "155px",
+            height: "149px",
             backgroundColor: "white",
             clipPath: " polygon(0 0, 100% 0, 100% 98%, 0 75%)",
           }}
