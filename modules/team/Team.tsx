@@ -27,7 +27,6 @@ const Team = () => {
         <Box
           sx={{
             display: "flex",
-
             padding: "10px",
             filter: " grayscale(100%)",
           }}
@@ -42,10 +41,17 @@ const Team = () => {
             />
           </Box>
 
-          <Box sx={{ padding: "15px" }}>
+          <Box sx={{ padding: "15px", position: "relative", left: "-6px" }}>
             <Image src="/images/team.png" alt="Team" width={333} height={476} />
           </Box>
-          <Box sx={{ padding: "15px", position: "relative", top: "150px" }}>
+          <Box
+            sx={{
+              padding: "15px",
+              position: "relative",
+              top: "150px",
+              left: "-8px",
+            }}
+          >
             <Image
               src="/images/team2.png"
               alt="Team2"
