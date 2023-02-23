@@ -16,5 +16,5 @@ export const ScrollTwoContainerStyles = (theme: Theme) => ({
   justifyItems: "center",
   height: "2044px",
   width: "1322px",
-  backgroundColor: " #E8FFD1",
+  backgroundColor: "#E8FFD1",
 });

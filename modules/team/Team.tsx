@@ -28,7 +28,7 @@ const Team = () => {
           sx={{
             display: "flex",
             padding: "10px",
-            filter: " grayscale(100%)",
+            filter: "grayscale(100%)",
           }}
         >
           <Box sx={{ padding: "15px", position: "relative", top: "120px" }}>
