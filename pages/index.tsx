@@ -7,6 +7,7 @@ import ScrollThree from "@/modules/scroll-three/ScrollThree";
 import ScrollFour from "@/modules/scroll-four/ScrollFour";
 import Team from "@/modules/team/Team";
 import Footer from "@/modules/footer/Footer";
+import { Box } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,15 +20,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Navbar />
+      <Navbar />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: "6rem",
+          minHeight: "100vh",
+        }}
+      >
         <ScrollOne />
         <ScrollTwo />
         <ScrollThree />
         <ScrollFour />
         <Team />
         <Footer />
-      </main>
+      </Box>
     </>
   );
 }

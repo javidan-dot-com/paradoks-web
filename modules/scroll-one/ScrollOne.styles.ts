@@ -14,5 +14,5 @@ export const ScrollOneContainerStyles = (theme: Theme) => ({
   justifyItems: "center",
   height: "884px",
   width: "100%",
-  backgroundColor: theme.palette.background.default,
+  backgroundColor: "#C7F5FF",
 });
