@@ -26,7 +26,7 @@ const ScrollFour = () => {
           src="/images/imageScrollFour.png"
           alt="Image Scroll Four"
           width={550}
-          height={355}
+          height={555}
         />
       </Box>
     </Box>
