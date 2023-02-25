@@ -3,7 +3,6 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: yellowgreen;
-  padding: 6rem;
   min-height: 100vh;
 }
 

@@ -20,16 +20,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "6rem",
+          padding: "5rem",
           minHeight: "100vh",
         }}
       >
+        {" "}
+        <Navbar />
         <ScrollOne />
         <ScrollTwo />
         <ScrollThree />

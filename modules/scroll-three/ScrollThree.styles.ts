@@ -13,6 +13,6 @@ export const ScrollThreeContainerStyles = (theme: Theme) => ({
   justifyContent: "center",
   justifyItems: "center",
   height: "700px",
-  width: "1322px",
+  width: "100%",
   backgroundColor: "#FFDAC5",
 });

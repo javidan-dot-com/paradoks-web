@@ -6,19 +6,22 @@ export const NavbarContainerStyles = (theme: Theme) => ({
   alignItems: "center",
   gap: "2rem",
   padding: "0 2rem",
-  paddingTop: "1.5rem",
+  paddingTop: "1.7rem",
+  height: "130px",
+  width: "100%",
+  backgroundColor: "#C7F5FF",
 });
 
 export const NavbarLiStyles = (theme: Theme) => ({
+  backgroundColor: "#C7F5FF",
+  position: "relative",
+  left: "290px",
   padding: "0",
   margin: "0",
   listStyle: "none",
   display: "flex",
+  flexDirection: "row",
   gap: "40px",
-  width: "252px",
+  width: "240px",
   height: "35px",
-  fontStyle: "normal",
-  fontWeight: "400",
-  fontSize: "18px",
-  lineHeight: "24px",
 });

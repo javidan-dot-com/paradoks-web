@@ -20,7 +20,7 @@ const ScrollOne = () => {
         <Typography
           variant="h6"
           sx={{
-            fontSize: "26px",
+            fontSize: "23px",
             color: "black",
           }}
         >

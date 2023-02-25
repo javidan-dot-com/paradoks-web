@@ -24,64 +24,93 @@ function Navbar() {
         </Link>
       </Box>
       <Box sx={(theme) => NavbarLiStyles(theme)}>
-        <ul>
-          <li>
-            <Link href="/home">
-              <Typography
-                variant="h6"
-                sx={{
-                  color: theme.palette.primary.main,
-                }}
-              >
-                home
-              </Typography>
-            </Link>
-          </li>
+        <li>
+          <Link href="/home">
+            <Typography
+              variant="h6"
+              sx={{
+                color: theme.palette.primary.main,
+                fontStyle: "normal",
+                fontWeight: "350",
+                fontSize: "17px",
+                lineHeight: "24px",
+                textDecoration: "transparent",
+              }}
+            >
+              home
+            </Typography>
+          </Link>
+        </li>
 
-          <li>
-            <Link href="/articles">
-              <Typography
-                variant="h6"
-                sx={(theme) => ({
-                  color: theme.palette.primary.main,
-                })}
-              >
-                articles
-              </Typography>
-            </Link>
-          </li>
+        <li>
+          <Link href="/articles">
+            <Typography
+              variant="h6"
+              sx={(theme) => ({
+                color: theme.palette.primary.main,
+                fontStyle: "normal",
+                fontWeight: "350",
+                fontSize: "17px",
+                lineHeight: "24px",
+                textDecoration: "none",
+              })}
+            >
+              articles
+            </Typography>
+          </Link>
+        </li>
 
-          <li>
-            <Link href="#">
-              Link
-              <Typography
-                variant="h6"
-                sx={(theme) => ({
-                  color: theme.palette.primary.main,
-                })}
-              >
-                karta
-              </Typography>
-            </Link>
-          </li>
-        </ul>
+        <li>
+          <Link href="#">
+            <Typography
+              variant="h6"
+              sx={(theme) => ({
+                color: theme.palette.primary.main,
+                fontStyle: "normal",
+                fontWeight: "350",
+                fontSize: "17px",
+                lineHeight: "24px",
+                textDecoration: "none",
+              })}
+            >
+              karta
+            </Typography>
+          </Link>
+        </li>
       </Box>
 
       <Box
         sx={{
-          display: "flex",
-          width: "100%",
           alignItems: "center",
           justifyContent: "center",
-          bgcolor: "background.default",
+          backgroundColor: "#C7F5FF",
           color: "text.primary",
           borderRadius: 1,
           p: 3,
+          position: "relative",
+          top: "-4px",
+          left: "30px",
         }}
       >
-        {theme.palette.mode} mode
+        {theme.palette.mode}
         <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-          {theme.palette.mode === "dark" ? "DARK" : "LIGHT"}
+          {theme.palette.mode === "dark" ? (
+            <Image
+              priority
+              src="/images/dark.png"
+              alt="Dark Mood"
+              width={13}
+              height={14}
+            />
+          ) : (
+            <Image
+              priority
+              src="/images/light.png"
+              alt="Light Mood"
+              width={16}
+              height={17}
+            />
+          )}
         </IconButton>
       </Box>
     </Box>
