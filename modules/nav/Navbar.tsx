@@ -34,7 +34,6 @@ function Navbar() {
                 fontWeight: "350",
                 fontSize: "17px",
                 lineHeight: "24px",
-                textDecoration: "transparent",
               }}
             >
               home
@@ -92,7 +91,6 @@ function Navbar() {
           left: "30px",
         }}
       >
-        {theme.palette.mode}
         <IconButton onClick={colorMode.toggleColorMode} color="inherit">
           {theme.palette.mode === "dark" ? (
             <Image
