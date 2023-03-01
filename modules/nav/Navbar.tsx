@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useContext } from "react";
 import { ColorModeContext } from "@/pages/_app";
 import { NavbarLiStyles, NavbarContainerStyles } from "./Navbar.styles";
+//import MenuIcon from "@mui/icons-material/Menu";
 
 function Navbar() {
   const theme = useTheme();
@@ -24,8 +25,9 @@ function Navbar() {
         </Link>
       </Box>
       <Box sx={(theme) => NavbarLiStyles(theme)}>
+        {/* //<MenuIcon /> */}
         <li>
-          <Link href="/home">
+          <Link href="/home" sx={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={{
@@ -43,7 +45,7 @@ function Navbar() {
         </li>
 
         <li>
-          <Link href="/articles">
+          <Link href="/articles" sx={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={(theme) => ({
@@ -61,7 +63,7 @@ function Navbar() {
         </li>
 
         <li>
-          <Link href="#">
+          <Link href="#" sx={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={(theme) => ({
@@ -86,19 +88,18 @@ function Navbar() {
           backgroundColor: "#C7F5FF",
           color: "text.primary",
           borderRadius: 1,
-          p: 3,
+          padding: "-3px",
           position: "relative",
           top: "-4px",
           left: "30px",
         }}
       >
-        {theme.palette.mode}
         <IconButton onClick={colorMode.toggleColorMode} color="inherit">
           {theme.palette.mode === "dark" ? (
             <Image
               priority
               src="/images/dark.png"
-              alt="Dark Mood"
+              alt="Dark Mode"
               width={13}
               height={14}
             />
@@ -106,7 +107,7 @@ function Navbar() {
             <Image
               priority
               src="/images/light.png"
-              alt="Light Mood"
+              alt="Light Mode"
               width={16}
               height={17}
             />

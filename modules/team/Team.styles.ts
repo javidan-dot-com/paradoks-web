@@ -13,6 +13,6 @@ export const TeamContainerStyles = (theme: Theme) => ({
   justifyContent: "center",
   justifyItems: "center",
   height: "700px",
-  width: "1310px",
+  width: "100%",
   backgroundColor: "white",
 });

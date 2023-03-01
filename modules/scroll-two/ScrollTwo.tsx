@@ -11,7 +11,7 @@ const ScrollTwo = () => {
     <Box sx={(theme) => ScrollTwoContainerStyles(theme)}>
       <Box
         sx={{
-          width: "1080px",
+          width: "100%",
           height: "1500px",
           left: "251px",
           top: "955px",
