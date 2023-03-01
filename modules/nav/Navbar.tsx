@@ -12,15 +12,25 @@ function Navbar() {
     <Box sx={(theme) => NavbarContainerStyles(theme)}>
       <Box>
         <Link href="/nav">
-          {
+          <Box sx={{
+            display: "flex",
+            width: "225px",
+            height: "63px",
+            position: "relative",
+
+            [theme.breakpoints.down("md")]: {
+              width: "165px",
+              height: "56px",
+            },
+          }}
+          >
             <Image
               priority
               src="/assets/paradoks.svg"
-              height={63}
-              width={255}
+              fill={true}
               alt="Paradoks Logo"
             />
-          }
+          </Box>
         </Link>
       </Box>
       <Box sx={(theme) => NavbarLiStyles(theme)}>
@@ -78,6 +88,23 @@ function Navbar() {
         </li>
       </Box>
 
+      <Box sx={{
+        display: "none",
+
+        [theme.breakpoints.down(750)]: {
+          display: "flex",
+        },
+      }}
+      >
+        <Image
+          priority
+          src="/images/menu.png"
+          alt="Menu"
+          width={24}
+          height={24}
+        />
+      </Box>
+
       <Box
         sx={{
           alignItems: "center",
@@ -85,10 +112,8 @@ function Navbar() {
           backgroundColor: "#C7F5FF",
           color: "text.primary",
           borderRadius: 1,
-          p: 3,
           position: "relative",
           top: "-4px",
-          left: "30px",
         }}
       >
         <IconButton onClick={colorMode.toggleColorMode} color="inherit">
