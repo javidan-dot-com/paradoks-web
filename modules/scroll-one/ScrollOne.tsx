@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import {
   ScrollOneStyles,
   ScrollOneContainerStyles,
@@ -7,6 +7,7 @@ import {
 import Image from "next/image";
 
 const ScrollOne = () => {
+  const theme = useTheme();
   const headingText = {
     brand: "paradoks, ",
     slogan: "dünyaya fərqli perspektivdən baxan bir platforma",
@@ -43,12 +44,23 @@ const ScrollOne = () => {
           color: "white",
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            display: "flex",
+            width: "815px",
+            height: "413px",
+            position: "relative",
+
+            [theme.breakpoints.down("md")]: {
+              width: "600px",
+              height: "400px",
+            },
+          }}
+        >
           <Image
             src="/images/imageScrollOne.png"
+            fill={true}
             alt="Image Scroll One"
-            width={815}
-            height={413}
           />
         </Box>
 
@@ -58,7 +70,7 @@ const ScrollOne = () => {
             bottom: "1px",
             top: "357px",
             right: "104px",
-            width: "555px",
+            width: "100%",
             height: "149px",
             backgroundColor: "white",
             clipPath: "polygon(0 0, 100% 0, 100% 98%, 0 75%)",

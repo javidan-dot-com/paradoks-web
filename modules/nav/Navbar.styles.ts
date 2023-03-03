@@ -13,8 +13,7 @@ export const NavbarContainerStyles = (theme: Theme) => ({
 
   [theme.breakpoints.down(750)]: {
     backgroundColor: "red",
-  }
-
+  },
 });
 
 export const NavbarLiStyles = (theme: Theme) => ({
@@ -28,9 +27,9 @@ export const NavbarLiStyles = (theme: Theme) => ({
   gap: "40px",
   width: "fit-content",
   height: "35px",
-  
+
   [theme.breakpoints.down(750)]: {
-    backgroundColor: "red",
+    backgroundColor: "#C7F5FF",
     display: "none",
-  }
+  },
 });
