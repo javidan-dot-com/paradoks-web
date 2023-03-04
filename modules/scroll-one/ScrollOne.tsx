@@ -47,13 +47,13 @@ const ScrollOne = () => {
         <Box
           sx={{
             display: "flex",
-            width: "815px",
+            width: "100%",
             height: "413px",
             position: "relative",
 
-            [theme.breakpoints.down("md")]: {
-              width: "600px",
-              height: "400px",
+            [theme.breakpoints.down("sm")]: {
+              width: "400px",
+              height: "200px",
             },
           }}
         >
