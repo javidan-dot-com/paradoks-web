@@ -7,10 +7,9 @@ import {
 } from "@mui/material";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Home from "./styles/Home.modules";
 import { createContext, useMemo, useState } from "react";
 
-export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
 export default function App({ Component, pageProps }: AppProps) {
   const [mode, setMode] = useState<PaletteMode>("light");
