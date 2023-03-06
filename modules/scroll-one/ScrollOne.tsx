@@ -18,28 +18,34 @@ const ScrollOne = () => {
   return (
     <Box sx={(theme) => ScrollOneContainerStyles(theme)}>
       <Box sx={(theme) => ScrollOneHeaderContainerStyles(theme)}>
-        <Typography
-          variant="h6"
+        <Box
           sx={{
-            fontSize: "23px",
-            color: "black",
+            width: "470px",
           }}
         >
-          <Typography sx={(theme) => ScrollOneStyles(theme)} component="span">
-            {headingText.brand}
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: "23px",
+              color: "black",
+            }}
+          >
+            <Typography sx={(theme) => ScrollOneStyles(theme)} component="span">
+              {headingText.brand}
+            </Typography>
+            {headingText.slogan}
           </Typography>
-          {headingText.slogan}
-        </Typography>
+        </Box>
       </Box>
 
       <Box
         sx={{
           display: "flex",
           position: "relative",
-          justifyContent: "flex-start",
           flexDirection: "row",
           width: "100%",
-          height: "100%",
+          height: "100vh",
+          padding: "20px",
           backgroundColor: "#C7F5FF",
           color: "white",
         }}
@@ -47,8 +53,8 @@ const ScrollOne = () => {
         <Box
           sx={{
             display: "flex",
-            width: "100%",
-            height: "413px",
+            width: "915px",
+            height: "513px",
             position: "relative",
 
             [theme.breakpoints.down("sm")]: {
@@ -62,41 +68,55 @@ const ScrollOne = () => {
             fill={true}
             alt="Image Scroll One"
           />
-        </Box>
-
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "1px",
-            top: "357px",
-            right: "104px",
-            width: "100%",
-            height: "149px",
-            backgroundColor: "white",
-            clipPath: "polygon(0 0, 100% 0, 100% 98%, 0 75%)",
-          }}
-        >
-          <Typography
+          <Box
             sx={{
-              width: "363px",
-              left: "50px",
-              height: "90px",
-              fontFamily: "Inter",
-              fontStyle: "normal",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "24px",
-              bgColor: "white",
-              color: "black",
-              margin: "40px",
-              textAlign: "left",
+              width: "100%",
+              height: "140px",
+              display: "flex",
+              position: "absolute",
+              justifyContent: "flex-end",
+              alignItems: "center",
+              backgroundColor: "red",
+              bottom: "1px",
+              top: "457px",
+              right: "-77px",
             }}
           >
-            {headingText.information}
-          </Typography>
+            <Box
+              sx={{
+                position: "relative",
+                width: "541px",
+                height: "137px",
+                backgroundColor: "white",
+                clipPath: "polygon(0 0, 100% 0, 100% 98%, 0 75%)",
+                right: "0",
+                left: "auto",
+              }}
+            >
+              <Typography
+                sx={{
+                  width: "363px",
+                  left: "50px",
+                  height: "40px",
+                  fontFamily: "Inter",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  fontSize: "18px",
+                  lineHeight: "24px",
+                  bgColor: "white",
+                  color: "black",
+                  margin: "30px",
+                  textAlign: "left",
+                }}
+              >
+                {headingText.information}
+              </Typography>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
+    // </Box>
   );
 };
 

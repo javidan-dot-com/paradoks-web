@@ -36,7 +36,11 @@ function Navbar() {
           </Box>
         </Link>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+      <Box
+        sx={{
+          display: "flex",
+        }}
+      >
         <Box sx={(theme) => NavbarLiStyles(theme)}>
           <li>
             <Link

@@ -10,15 +10,12 @@ const ScrollTwo = () => {
   return (
     <Box sx={(theme) => ScrollTwoContainerStyles(theme)}>
       <Box
-        component="span"
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "white",
-          width: 1080,
-          hight: 1920,
-          color: "white",
+          backgroundColor: "grey",
+          width: "300px",
+          height: "534px",
+          color: "grey",
+          padding: "10px",
         }}
       ></Box>
     </Box>
