@@ -39,7 +39,12 @@ function Navbar() {
       <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
         <Box sx={(theme) => NavbarLiStyles(theme)}>
           <li>
-            <Link href="/home">
+            <Link
+              href="/home"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
               <Typography
                 variant="h6"
                 sx={{
@@ -56,7 +61,12 @@ function Navbar() {
           </li>
 
           <li>
-            <Link href="/articles">
+            <Link
+              href="/articles"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
               <Typography
                 variant="h6"
                 sx={(theme) => ({
@@ -74,7 +84,12 @@ function Navbar() {
           </li>
 
           <li>
-            <Link href="#">
+            <Link
+              href="#"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
               <Typography
                 variant="h6"
                 sx={(theme) => ({

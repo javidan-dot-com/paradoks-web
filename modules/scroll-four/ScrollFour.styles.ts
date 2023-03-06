@@ -12,7 +12,7 @@ export const ScrollFourContainerStyles = (theme: Theme) => ({
   alignItems: "center",
   justifyContent: "center",
   justifyItems: "center",
-  height: "700px",
+  height: "100vh",
   width: "100%",
   backgroundColor: "#FAFFC7",
 });
