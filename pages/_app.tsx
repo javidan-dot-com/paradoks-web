@@ -13,6 +13,7 @@ export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
 export default function App({ Component, pageProps }: AppProps) {
   const [mode, setMode] = useState<PaletteMode>("light");
+  
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
   const colorMode = useMemo(
     () => ({

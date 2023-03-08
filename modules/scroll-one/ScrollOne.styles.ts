@@ -10,9 +10,8 @@ export const ScrollOneStyles = (theme: Theme) => ({
 export const ScrollOneContainerStyles = (theme: Theme) => ({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
   justifyItems: "center",
-  height: "884px",
+  height: "100vh",
   top: "20px",
   width: "100%",
   backgroundColor: "#C7F5FF",
@@ -20,8 +19,23 @@ export const ScrollOneContainerStyles = (theme: Theme) => ({
 
 export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
   position: "relative",
-  width: "546px",
+  justifyContent: "center",
+  width: "100%",
   height: "101px",
   backgroundColor: "#C7F5FF",
-  left: "316px",
+  display: "flex",
+  alignItems: "center",
+  whiteSpace: "wrap",
+  // left: "216px",
+});
+
+export const ScrollBox = (theme: Theme) => ({
+  display: "flex",
+  position: "relative",
+  justifyContent: "flex-start",
+  flexDirection: "row",
+  width: "100%",
+  height: "100%",
+  backgroundColor: "#C7F5FF",
+  color: "white",
 });

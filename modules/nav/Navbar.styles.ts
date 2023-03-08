@@ -13,24 +13,23 @@ export const NavbarContainerStyles = (theme: Theme) => ({
 
   [theme.breakpoints.down(750)]: {
     backgroundColor: "red",
-  }
-
+  },
 });
 
 export const NavbarLiStyles = (theme: Theme) => ({
   position: "relative",
   // left: "290px",
   padding: "0",
-  margin: "0",
+  marginRight: "20px",
   listStyle: "none",
   display: "flex",
   flexDirection: "row",
-  gap: "40px",
+  gap: "35px",
   width: "fit-content",
   height: "35px",
-  
+
   [theme.breakpoints.down(750)]: {
-    backgroundColor: "red",
+    backgroundColor: "#C7F5FF",
     display: "none",
-  }
+  },
 });

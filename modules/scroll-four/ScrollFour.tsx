@@ -7,12 +7,21 @@ import Image from "next/image";
 
 const ScrollFour = () => {
   const headingText = {
-    brand: "Scroll Four ",
+    brand: "Məlumatların vizual qrafiklərlə çatdırılması ",
   };
 
   return (
     <Box sx={(theme) => ScrollFourContainerStyles(theme)}>
-      <Box sx={{ width: "fit-content" }}>
+      <Box
+        sx={{
+          width: "429px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "15px",
+          padding: "25px",
+        }}
+      >
         <Typography
           variant="h6"
           component={"span"}
@@ -21,13 +30,36 @@ const ScrollFour = () => {
           {headingText.brand}
         </Typography>
       </Box>
-      <Box>
-        <Image
-          src="/images/imageScrollFour.png"
-          alt="Image Scroll Four"
-          width={550}
-          height={555}
-        />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-around",
+          // alignContent: "space-around",
+          height: "100vh",
+          width: "980px",
+        }}
+      >
+        <Box
+          sx={{
+            position: "relative",
+            width: "250px",
+            height: "444px",
+            backgroundColor: "#a7bcb9",
+            top: "50px",
+          }}
+        ></Box>
+        <Box
+          sx={{ width: "309px", height: "550px", backgroundColor: "#24527a" }}
+        ></Box>
+        <Box
+          sx={{
+            position: "relative",
+            top: "50px",
+            width: "250px",
+            height: "444px",
+            backgroundColor: "#5dacbd",
+          }}
+        ></Box>
       </Box>
     </Box>
   );

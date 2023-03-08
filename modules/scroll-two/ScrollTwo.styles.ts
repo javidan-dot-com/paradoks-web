@@ -9,12 +9,10 @@ export const ScrollTwoStyles = (theme: Theme) => ({
 });
 
 export const ScrollTwoContainerStyles = (theme: Theme) => ({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "start",
-  justifyContent: "center",
-  justifyItems: "center",
-  height: "2044px",
+  height: "100vh",
   width: "100%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   backgroundColor: "#E8FFD1",
 });

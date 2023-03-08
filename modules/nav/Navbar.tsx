@@ -24,11 +24,11 @@ function Navbar() {
             height: "63px",
             position: "relative",
 
-            [theme.breakpoints.down("md")]: {
-              width: "165px",
-              height: "56px",
-            },
-          }}
+              [theme.breakpoints.down("md")]: {
+                width: "165px",
+                height: "56px",
+              },
+            }}
           >
             <Image
               priority
@@ -135,42 +135,52 @@ function Navbar() {
           </Link>
         </li>
 
-        <li>
-          <Link href="/articles">
-            <Typography
-              variant="h6"
-              sx={(theme) => ({
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
+          <li>
+            <Link
+              href="/articles"
+              sx={{
                 textDecoration: "none",
-              })}
+              }}
             >
-              articles
-            </Typography>
-          </Link>
-        </li>
+              <Typography
+                variant="h6"
+                sx={(theme) => ({
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  textDecoration: "none",
+                })}
+              >
+                articles
+              </Typography>
+            </Link>
+          </li>
 
-        <li>
-          <Link href="#">
-            <Typography
-              variant="h6"
-              sx={(theme) => ({
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
+          <li>
+            <Link
+              href="#"
+              sx={{
                 textDecoration: "none",
-              })}
+              }}
             >
-              karta
-            </Typography>
-          </Link>
-        </li>
-      </Box>
+              <Typography
+                variant="h6"
+                sx={(theme) => ({
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  textDecoration: "none",
+                })}
+              >
+                karta
+              </Typography>
+            </Link>
+          </li>
+        </Box>
 
       <Box
         sx={{
@@ -192,38 +202,38 @@ function Navbar() {
         />
       </Box>
 
-      <Box
-        sx={{
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#C7F5FF",
-          color: "text.primary",
-          borderRadius: 1,
-          position: "relative",
-          top: "-4px",
-        }}
-      >
-        <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-          {theme.palette.mode === "dark" ? (
-            <Image
-              priority
-              src="/images/dark.png"
-              alt="Dark Mood"
-              width={13}
-              height={14}
-            />
-          ) : (
-            <Image
-              priority
-              src="/images/light.png"
-              alt="Light Mood"
-              width={16}
-              height={17}
-            />
-          )}
-        </IconButton>
+        <Box
+          sx={{
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#C7F5FF",
+            color: "text.primary",
+            borderRadius: 1,
+            position: "relative",
+            top: "-4px",
+          }}
+        >
+          <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === "dark" ? (
+              <Image
+                priority
+                src="/images/dark.png"
+                alt="Dark Mood"
+                width={13}
+                height={14}
+              />
+            ) : (
+              <Image
+                priority
+                src="/images/light.png"
+                alt="Light Mood"
+                width={16}
+                height={17}
+              />
+            )}
+          </IconButton>
+        </Box>
       </Box>
-    </Box>
   );
 }
 
