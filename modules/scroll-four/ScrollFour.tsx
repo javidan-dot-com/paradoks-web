@@ -14,7 +14,7 @@ const ScrollFour = () => {
     <Box sx={(theme) => ScrollFourContainerStyles(theme)}>
       <Box
         sx={{
-          width: "429px",
+          width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
