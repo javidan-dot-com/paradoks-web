@@ -22,12 +22,15 @@ const Team = () => {
         sx={{
           display: "flex",
           flexDirection: "row",
+          justifyContent: "space-around",
+          width: "100%",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            padding: "10px",
+
+            justifyContent: "space-around",
             filter: "grayscale(100%)",
           }}
         >
@@ -46,25 +49,43 @@ const Team = () => {
           </Box>
           <Box
             sx={{
+              backgroundSize: "cover",
               padding: "15px",
               position: "relative",
               top: "150px",
               left: "-8px",
+              width: "200px",
+              height: "271px",
             }}
           >
             <Image
               src="/images/team2.png"
               alt="Team2"
-              width={200}
-              height={271}
+              // width={200}
+              // height={271}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
             />
           </Box>
-          <Box sx={{ padding: "15x", position: "relative", top: "50px" }}>
+          <Box
+            sx={{
+              backgroundSize: "cover",
+              padding: "15x",
+              position: "relative",
+              top: "50px",
+              width: "166px",
+              height: "446px",
+            }}
+          >
             <Image
               src="/images/team3.png"
               alt="Team3"
-              width={166}
-              height={446}
+              fill={true}
+              layout="fill"
+              objectFit="cover"
+              // width={166}
+              // height={446}
             />
           </Box>
         </Box>

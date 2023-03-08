@@ -34,7 +34,7 @@ const ScrollFour = () => {
         sx={{
           display: "flex",
           justifyContent: "space-around",
-          // alignContent: "space-around",
+          alignItems: "center",
           height: "100vh",
           width: "980px",
         }}
@@ -45,7 +45,6 @@ const ScrollFour = () => {
             width: "250px",
             height: "444px",
             backgroundColor: "#a7bcb9",
-            top: "50px",
           }}
         ></Box>
         <Box
@@ -54,7 +53,6 @@ const ScrollFour = () => {
         <Box
           sx={{
             position: "relative",
-            top: "50px",
             width: "250px",
             height: "444px",
             backgroundColor: "#5dacbd",
