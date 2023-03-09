@@ -9,6 +9,8 @@ export const ScrollFourStyles = (theme: Theme) => ({
 
 export const ScrollFourContainerStyles = (theme: Theme) => ({
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",

@@ -8,6 +8,8 @@ export const ScrollThreeStyles = (theme: Theme) => ({
 
 export const ScrollThreeContainerStyles = (theme: Theme) => ({
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",

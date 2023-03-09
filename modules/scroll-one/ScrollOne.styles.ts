@@ -9,6 +9,8 @@ export const ScrollOneStyles = (theme: Theme) => ({
 
 export const ScrollOneContainerStyles = (theme: Theme) => ({
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
   flexDirection: "column",
   justifyItems: "center",
   height: "100vh",

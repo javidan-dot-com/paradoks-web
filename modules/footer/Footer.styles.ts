@@ -8,6 +8,9 @@ export const FooterStyles = (theme: Theme) => ({
 
 export const FooterContainerStyles = (theme: Theme) => ({
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
+  paddingBottom: "4rem",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",

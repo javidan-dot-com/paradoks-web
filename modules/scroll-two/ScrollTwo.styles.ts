@@ -12,6 +12,8 @@ export const ScrollTwoContainerStyles = (theme: Theme) => ({
   height: "100vh",
   width: "100%",
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "#E8FFD1",

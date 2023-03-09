@@ -8,6 +8,8 @@ export const TeamStyles = (theme: Theme) => ({
 
 export const TeamContainerStyles = (theme: Theme) => ({
   display: "flex",
+  paddingRight: "4rem",
+  paddingLeft: "4rem",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",

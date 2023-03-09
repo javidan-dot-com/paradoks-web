@@ -3,10 +3,10 @@ import { Theme } from "@mui/material";
 export const NavbarContainerStyles = (theme: Theme) => ({
   display: "flex",
   justifyContent: "space-between",
+  paddingLeft: "4rem",
+  paddingRight: "4rem",
   alignItems: "center",
-  // gap: "2rem",
-  // padding: "0 2rem",
-  paddingTop: "1.7rem",
+  paddingTop: "4rem",
   height: "130px",
   width: "100%",
   backgroundColor: "#C7F5FF",
