@@ -11,10 +11,14 @@ export const TeamContainerStyles = (theme: Theme) => ({
   paddingRight: "4rem",
   paddingLeft: "4rem",
   flexDirection: "column",
-  alignItems: "center",
   justifyContent: "center",
   justifyItems: "center",
   height: "100vh",
   width: "100%",
-  backgroundColor: "white",
+  rowGap: "80px",
+  backgroundColor: "red",
+
+  [theme.breakpoints.down("sm")]: {
+    height: "fit-content",
+  }
 });
