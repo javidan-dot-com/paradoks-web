@@ -14,7 +14,6 @@ function Navbar() {
     setOpen(!open);
   }
 
-  //comment
   return (
     <Box sx={(theme) => NavbarContainerStyles(theme)}>
       <Box>
