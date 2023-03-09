@@ -14,7 +14,7 @@ export const TeamContainerStyles = (theme: Theme) => ({
   alignItems: "center",
   justifyContent: "center",
   justifyItems: "center",
-  height: "700px",
-  width: "1310px",
+  height: "100vh",
+  width: "100%",
   backgroundColor: "white",
 });
