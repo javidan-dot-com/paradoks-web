@@ -18,11 +18,12 @@ function Navbar() {
     <Box sx={(theme) => NavbarContainerStyles(theme)}>
       <Box>
         <Link href="/">
-          <Box sx={{
-            display: "flex",
-            width: "225px",
-            height: "63px",
-            position: "relative",
+          <Box
+            sx={{
+              display: "flex",
+              width: "225px",
+              height: "63px",
+              position: "relative",
 
               [theme.breakpoints.down("md")]: {
                 width: "165px",
@@ -40,25 +41,25 @@ function Navbar() {
         </Link>
       </Box>
 
-      <Box sx={{
-        display: `${open ? "flex" : "none"}`,
-        backgroundColor: "white",
-        borderRadius: "10px",
-        width: "300px",
-        height: "800px",
-        position: "absolute",
-        top: "200px",
-        border: "1px solid black",
-        right: "0",
-        zIndex: 1,
+      <Box
+        sx={{
+          display: `${open ? "flex" : "none"}`,
+          backgroundColor: "white",
+          borderRadius: "10px",
+          width: "300px",
+          height: "800px",
+          position: "absolute",
+          top: "200px",
+          border: "1px solid black",
+          right: "0",
+          zIndex: 1,
 
-        [theme.breakpoints.up(750)]: {
-          display: "none",
-        },
-      }}
+          [theme.breakpoints.up(750)]: {
+            display: "none",
+          },
+        }}
       >
         MENU
-
         <ul>
           <li>
             <Link href="/home">
@@ -70,6 +71,7 @@ function Navbar() {
                   fontWeight: "350",
                   fontSize: "17px",
                   lineHeight: "24px",
+                  textDecoration: "none",
                 }}
               >
                 home
@@ -113,27 +115,27 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-
       </Box>
 
-
-      <Box sx={(theme) => NavbarLiStyles(theme)}>
-        <li>
-          <Link href="/home">
-            <Typography
-              variant="h6"
-              sx={{
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
-              }}
-            >
-              home
-            </Typography>
-          </Link>
-        </li>
+      <Box sx={{ display: "flex" }}>
+        <Box sx={(theme) => NavbarLiStyles(theme)}>
+          <li>
+            <Link href="/home" sx={{ textDecoration: "none" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  textDecoration: "none",
+                }}
+              >
+                home
+              </Typography>
+            </Link>
+          </li>
 
           <li>
             <Link
@@ -182,25 +184,24 @@ function Navbar() {
           </li>
         </Box>
 
-      <Box
-        sx={{
-          display: "none",
+        <Box
+          sx={{
+            display: "none",
 
-          [theme.breakpoints.down(750)]: {
-            display: "flex",
-          },
-        }}
-        onClick={handleClick}
-      >
-
-        <Image
-          priority
-          src="/images/menu.png"
-          alt="Menu"
-          width={24}
-          height={24}
-        />
-      </Box>
+            [theme.breakpoints.down(750)]: {
+              display: "flex",
+            },
+          }}
+          onClick={handleClick}
+        >
+          <Image
+            priority
+            src="/images/menu.png"
+            alt="Menu"
+            width={24}
+            height={24}
+          />
+        </Box>
 
         <Box
           sx={{
@@ -234,6 +235,7 @@ function Navbar() {
           </IconButton>
         </Box>
       </Box>
+    </Box>
   );
 }
 

@@ -45,7 +45,7 @@ const ScrollOne = () => {
           flexDirection: "row",
           width: "100%",
           height: "100vh",
-          padding: "20px",
+          // padding: "20px",
           backgroundColor: "#C7F5FF",
           color: "white",
         }}

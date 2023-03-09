@@ -26,7 +26,6 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "5rem",
           minHeight: "100vh",
         }}
       >
