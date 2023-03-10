@@ -27,7 +27,6 @@ const ScrollOne = () => {
             variant="h6"
             sx={{
               fontSize: "23px",
-              color: "black",
             }}
           >
             <Typography sx={(theme) => ScrollOneStyles(theme)} component="span">
@@ -45,8 +44,6 @@ const ScrollOne = () => {
           flexDirection: "row",
           width: "100%",
           height: "100vh",
-          // padding: "20px",
-          backgroundColor: "#C7F5FF",
           color: "white",
         }}
       >
@@ -76,7 +73,7 @@ const ScrollOne = () => {
               position: "absolute",
               justifyContent: "flex-end",
               alignItems: "center",
-              backgroundColor: "red",
+              // backgroundColor: "red",
               bottom: "1px",
               top: "457px",
               right: "-77px",
@@ -87,7 +84,7 @@ const ScrollOne = () => {
                 position: "relative",
                 width: "541px",
                 height: "137px",
-                backgroundColor: "white",
+                backgroundColor: "#6966FF",
                 clipPath: "polygon(0 0, 100% 0, 100% 98%, 0 75%)",
                 right: "0",
                 left: "auto",
@@ -103,8 +100,6 @@ const ScrollOne = () => {
                   fontWeight: "400",
                   fontSize: "18px",
                   lineHeight: "24px",
-                  bgColor: "white",
-                  color: "black",
                   margin: "30px",
                   textAlign: "left",
                 }}

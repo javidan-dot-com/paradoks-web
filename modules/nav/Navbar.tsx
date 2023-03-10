@@ -37,6 +37,7 @@ function Navbar() {
               width: "225px",
               height: "63px",
               position: "relative",
+              fill: theme.palette.text.primary,
 
               [theme.breakpoints.down("md")]: {
                 width: "165px",
@@ -84,7 +85,6 @@ function Navbar() {
               href="/home"
               sx={{
                 textDecoration: "none",
-                listStyleType: "none",
               }}
             >
               <Typography
@@ -113,7 +113,6 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={{
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
@@ -135,7 +134,6 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={(theme) => ({
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
@@ -149,18 +147,26 @@ function Navbar() {
           </ListItem>
         </List>
       </Box>
-      <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+
+      {/* NAV */}
+
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-end",
+        }}
+      >
         <List sx={(theme) => NavbarLiStyles(theme)}>
           <ListItem>
             <Link href="/home" sx={{ textDecoration: "none" }}>
               <Typography
                 variant="h6"
                 sx={{
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
                   lineHeight: "24px",
+                  color: theme.palette.text.primary,
                 }}
               >
                 home
@@ -173,11 +179,11 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={{
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
                   lineHeight: "24px",
+                  color: theme.palette.text.primary,
                 }}
               >
                 articles
@@ -195,12 +201,12 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={(theme) => ({
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
                   lineHeight: "24px",
                   textDecoration: "none",
+                  color: theme.palette.text.primary,
                 })}
               >
                 karta
@@ -232,8 +238,6 @@ function Navbar() {
           sx={{
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#C7F5FF",
-            color: "#232334",
             borderRadius: 1,
             position: "relative",
           }}

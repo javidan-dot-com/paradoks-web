@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { ScrollTwoStyles, ScrollTwoContainerStyles } from "./ScrollTwo.styles";
 import Image from "next/image";
 
@@ -11,10 +11,9 @@ const ScrollTwo = () => {
     <Box sx={(theme) => ScrollTwoContainerStyles(theme)}>
       <Box
         sx={{
-          backgroundColor: "grey",
           width: "300px",
           height: "534px",
-          color: "grey",
+          color: "red",
           padding: "10px",
         }}
       ></Box>

@@ -8,16 +8,18 @@ const Team = () => {
   };
   const theme = useTheme();
   return (
-    <Box sx={{
-      display: "flex",
-      paddingRight: "4rem",
-      paddingLeft: "4rem",
-      height: "100vh",
-      width: "100%",
-      rowGap: "80px",
-      justifyContent: "center",
-      flexDirection: "column",
-    }}>
+    <Box
+      sx={{
+        display: "flex",
+        paddingRight: "4rem",
+        paddingLeft: "4rem",
+        height: "100vh",
+        width: "100%",
+        rowGap: "80px",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
       <Box
         sx={{
           width: "100%",
