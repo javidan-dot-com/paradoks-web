@@ -18,9 +18,7 @@ export const NavbarContainerStyles = (theme: Theme) => ({
 
 export const NavbarLiStyles = (theme: Theme) => ({
   position: "relative",
-  // left: "290px",
   padding: "0",
-  marginRight: "20px",
   listStyle: "none",
   display: "flex",
   flexDirection: "row",

@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { TeamStyles, TeamContainerStyles } from "./Team.styles";
+import { TeamStyles } from "./Team.styles";
 import Image from "next/image";
 
 const Team = () => {
@@ -8,10 +8,21 @@ const Team = () => {
   };
   const theme = useTheme();
   return (
-    <Box sx={(theme) => TeamContainerStyles(theme)}>
+    <Box sx={{
+      display: "flex",
+      paddingRight: "4rem",
+      paddingLeft: "4rem",
+      height: "100vh",
+      width: "100%",
+      rowGap: "80px",
+      justifyContent: "center",
+      flexDirection: "column",
+    }}>
       <Box
         sx={{
-          width: "fir-content",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <Typography
@@ -26,25 +37,32 @@ const Team = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between",
           filter: "grayscale(100%)",
-          gap: "20px",
+          columnGap: "20px",
+          alignItems: "center",
+          width: "fit-content",
 
           [theme.breakpoints.down("sm")]: {
             display: "flex",
             flexDirection: "column",
             gap: "15px",
             width: "80%",
+            columnGap: "0",
+            // rowGap: "15px",
           },
         }}
       >
         <Box
           sx={{
-            padding: "15px",
             position: "relative",
-            top: "120px",
             width: "226px",
             height: "300px",
+
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "400px",
+              padding: "15px",
+            },
           }}
         >
           {" "}
@@ -59,10 +77,15 @@ const Team = () => {
 
         <Box
           sx={{
-            padding: "15px",
             position: "relative",
             width: "340px",
             height: "476px",
+
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "400px",
+              padding: "15px",
+            },
           }}
         >
           <Image
@@ -75,12 +98,15 @@ const Team = () => {
         </Box>
         <Box
           sx={{
-            backgroundSize: "cover",
-            padding: "15px",
             position: "relative",
-            top: "150px",
             width: "200px",
             height: "271px",
+
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "400px",
+              padding: "15px",
+            },
           }}
         >
           <Image
@@ -93,12 +119,15 @@ const Team = () => {
         </Box>
         <Box
           sx={{
-            backgroundSize: "cover",
-            padding: "15x",
             position: "relative",
-            top: "50px",
             width: "220px",
             height: "446px",
+
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "400px",
+              padding: "15px",
+            },
           }}
         >
           <Image
@@ -112,11 +141,15 @@ const Team = () => {
 
         <Box
           sx={{
-            backgroundSize: "cover",
             position: "relative",
-            top: "130px",
             width: "200px",
             height: "271px",
+
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "400px",
+              padding: "15px",
+            },
           }}
         >
           <Image
