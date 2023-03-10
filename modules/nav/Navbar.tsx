@@ -149,115 +149,115 @@ function Navbar() {
           </ListItem>
         </List>
       </Box>
+      <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+        <List sx={(theme) => NavbarLiStyles(theme)}>
+          <ListItem>
+            <Link href="/home" sx={{ textDecoration: "none" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                }}
+              >
+                home
+              </Typography>
+            </Link>
+          </ListItem>
 
-      <List sx={(theme) => NavbarLiStyles(theme)}>
-        <ListItem>
-          <Link href="/home" sx={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
+          <ListItem>
+            <Link href="/articles" sx={{ textDecoration: "none" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                }}
+              >
+                articles
+              </Typography>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link
+              href="#"
               sx={{
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
-              }}
-            >
-              home
-            </Typography>
-          </Link>
-        </ListItem>
-
-        <ListItem>
-          <Link href="/articles" sx={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
-              }}
-            >
-              articles
-            </Typography>
-          </Link>
-        </ListItem>
-
-        <ListItem>
-          <Link
-            href="#"
-            sx={{
-              textDecoration: "none",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={(theme) => ({
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
                 textDecoration: "none",
-              })}
+              }}
             >
-              karta
-            </Typography>
-          </Link>
-        </ListItem>
-      </List>
+              <Typography
+                variant="h6"
+                sx={(theme) => ({
+                  color: theme.palette.primary.main,
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  textDecoration: "none",
+                })}
+              >
+                karta
+              </Typography>
+            </Link>
+          </ListItem>
+        </List>
 
-      <Box
-        sx={{
-          display: "none",
+        <Box
+          sx={{
+            display: "none",
 
-          [theme.breakpoints.down(750)]: {
-            display: "flex",
-          },
-        }}
-        onClick={handleClick}
-      >
-        <Image
-          priority
-          src="/images/menu.png"
-          alt="Menu"
-          width={24}
-          height={24}
-        />
-      </Box>
+            [theme.breakpoints.down(750)]: {
+              display: "flex",
+            },
+          }}
+          onClick={handleClick}
+        >
+          <Image
+            priority
+            src="/images/menu.png"
+            alt="Menu"
+            width={24}
+            height={24}
+          />
+        </Box>
 
-      <Box
-        sx={{
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#C7F5FF",
-          color: "text.primary",
-          borderRadius: 1,
-          position: "relative",
-          top: "-4px",
-        }}
-      >
-        <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-          {theme.palette.mode === "dark" ? (
-            <Image
-              priority
-              src="/images/dark.png"
-              alt="Dark Mood"
-              width={13}
-              height={14}
-            />
-          ) : (
-            <Image
-              priority
-              src="/images/light.png"
-              alt="Light Mood"
-              width={16}
-              height={17}
-            />
-          )}
-        </IconButton>
+        <Box
+          sx={{
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#C7F5FF",
+            color: "#232334",
+            borderRadius: 1,
+            position: "relative",
+          }}
+        >
+          <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === "dark" ? (
+              <Image
+                priority
+                src="/images/dark.png"
+                alt="Dark Mood"
+                width={13}
+                height={14}
+              />
+            ) : (
+              <Image
+                priority
+                src="/images/light.png"
+                alt="Light Mood"
+                width={16}
+                height={17}
+              />
+            )}
+          </IconButton>
+        </Box>
       </Box>
     </Box>
   );

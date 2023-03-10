@@ -22,7 +22,6 @@ export const NavbarLiStyles = (theme: Theme) => ({
   listStyle: "none",
   display: "flex",
   flexDirection: "row",
-  gap: "35px",
   width: "fit-content",
   height: "35px",
 
