@@ -12,10 +12,16 @@ export const ScrollFourContainerStyles = (theme: Theme) => ({
   paddingRight: "4rem",
   paddingLeft: "4rem",
   flexDirection: "column",
-  alignItems: "center",
   justifyContent: "center",
-  justifyItems: "center",
+  alignItems: "center",
   height: "100vh",
   width: "100%",
-  backgroundColor: "#e0ebeb",
+  backgroundColor: "pink",
+  rowGap: "80px",
+
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    flexDirection: "column",
+    height: "fit-content",
+  },
 });

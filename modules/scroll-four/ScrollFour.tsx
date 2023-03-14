@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import {
   ScrollFourStyles,
   ScrollFourContainerStyles,
@@ -10,6 +10,8 @@ const ScrollFour = () => {
     brand: "Məlumatların vizual qrafiklərlə çatdırılması ",
   };
 
+  const theme = useTheme();
+
   return (
     <Box sx={(theme) => ScrollFourContainerStyles(theme)}>
       <Box
@@ -18,8 +20,9 @@ const ScrollFour = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          margin: "15px",
-          padding: "25px",
+          flexDirection: "column",
+          // margin: "15px",
+          // padding: "25px",
         }}
       >
         <Typography
@@ -30,34 +33,83 @@ const ScrollFour = () => {
           {headingText.brand}
         </Typography>
       </Box>
+
+      {/* ///////// */}
+
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
-          width: "980px",
+          columnGap: "20px",
+
+          [theme.breakpoints.down("sm")]: {
+            display: "flex",
+            flexDirection: "column",
+            width: "980px",
+            padding: "20px",
+            // height: "1920px",
+          },
         }}
       >
         <Box
           sx={{
-            position: "relative",
             width: "250px",
             height: "444px",
             backgroundColor: "#a7bcb9",
           }}
         ></Box>
-        <Box
-          sx={{ width: "309px", height: "550px", backgroundColor: "#24527a" }}
-        ></Box>
+
         <Box
           sx={{
-            position: "relative",
-            width: "250px",
-            height: "444px",
-            backgroundColor: "#5dacbd",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            columnGap: "20px",
+
+            [theme.breakpoints.down("sm")]: {
+              display: "flex",
+              flexDirection: "column",
+              width: "980px",
+              padding: "20px",
+              // height: "1920px",
+            },
           }}
-        ></Box>
+        >
+          <Box
+            sx={{
+              position: "relative",
+              width: "309px",
+              height: "550px",
+              backgroundColor: "#24527a",
+            }}
+          ></Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+
+            [theme.breakpoints.down("sm")]: {
+              display: "flex",
+              flexDirection: "column",
+              width: "980px",
+              padding: "20px",
+              // height: "1920px",
+            },
+          }}
+        >
+          <Box
+            sx={{
+              position: "relative",
+              width: "250px",
+              height: "444px",
+              backgroundColor: "#a7bcb9",
+            }}
+          ></Box>
+        </Box>
       </Box>
     </Box>
   );
