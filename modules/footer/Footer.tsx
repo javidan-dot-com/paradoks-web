@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, List, ListItem } from "@mui/material";
 import { FooterStyles, FooterContainerStyles } from "./Footer.styles";
 import Image from "next/image";
 
@@ -17,6 +17,47 @@ const Footer = () => {
         >
           {headingText.brand}
         </Typography>
+
+        <Box
+          sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+        >
+          <List>
+            <Box sx={{}}>
+              <ListItem>
+                <Image
+                  priority
+                  src="/assets/instagram.svg"
+                  alt="Menu"
+                  width={24}
+                  height={24}
+                />
+              </ListItem>
+            </Box>
+
+            <Box>
+              <ListItem>
+                <Image
+                  priority
+                  src="/assets/tiktok.svg"
+                  alt="Menu"
+                  width={24}
+                  height={24}
+                />
+              </ListItem>
+            </Box>
+            <Box>
+              <ListItem>
+                <Image
+                  priority
+                  src="/assets/youtube.svg"
+                  alt="Menu"
+                  width={24}
+                  height={24}
+                />
+              </ListItem>
+            </Box>
+          </List>
+        </Box>
       </Box>
     </Box>
   );
