@@ -11,11 +11,11 @@ export const FooterContainerStyles = (theme: Theme) => ({
   paddingRight: "4rem",
   paddingLeft: "4rem",
   paddingBottom: "4rem",
-  flexDirection: "column",
-  alignItems: "center",
+  flexDirection: "row",
+  // alignItems: "center",
   justifyContent: "center",
-  justifyItems: "center",
-  height: "253px",
+  // justifyItems: "center",
+
   width: "100%",
   backgroundColor: "#C9FFD5",
 });
