@@ -102,6 +102,7 @@ const ScrollOne = () => {
                   lineHeight: "24px",
                   margin: "30px",
                   textAlign: "left",
+                  color: theme.palette.text.primary,
                 }}
               >
                 {headingText.information}

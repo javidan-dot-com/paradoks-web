@@ -13,7 +13,7 @@ export const TeamContainerStyles = (theme: Theme) => ({
   flexDirection: "column",
   justifyContent: "center",
   justifyItems: "center",
-  height: "100vh",
+  // height: "100vh",
   width: "100%",
   rowGap: "80px",
   backgroundColor: theme.palette.primary.main,
