@@ -24,36 +24,42 @@ const Footer = () => {
           <List>
             <Box sx={{}}>
               <ListItem>
-                <Image
-                  priority
-                  src="/assets/instagram.svg"
-                  alt="Menu"
-                  width={24}
-                  height={24}
-                />
+                <a href="https://www.instagram.com/paradoksmagazine/">
+                  <Image
+                    priority
+                    src="/assets/instagram.svg"
+                    alt="Menu"
+                    width={24}
+                    height={24}
+                  />
+                </a>
               </ListItem>
             </Box>
 
             <Box>
               <ListItem>
-                <Image
-                  priority
-                  src="/assets/tiktok.svg"
-                  alt="Menu"
-                  width={24}
-                  height={24}
-                />
+                <a href="https://www.tiktok.com/@paradoksmagazine">
+                  <Image
+                    priority
+                    src="/assets/tiktok.svg"
+                    alt="Menu"
+                    width={24}
+                    height={24}
+                  />
+                </a>
               </ListItem>
             </Box>
             <Box>
               <ListItem>
-                <Image
-                  priority
-                  src="/assets/youtube.svg"
-                  alt="Menu"
-                  width={24}
-                  height={24}
-                />
+                <a href="https://www.youtube.com/@ParadoksMagazine">
+                  <Image
+                    priority
+                    src="/assets/youtube.svg"
+                    alt="Menu"
+                    width={24}
+                    height={24}
+                  />
+                </a>
               </ListItem>
             </Box>
           </List>
