@@ -37,6 +37,7 @@ function Navbar() {
               width: "225px",
               height: "63px",
               position: "relative",
+              fill: theme.palette.text.primary,
 
               [theme.breakpoints.down("md")]: {
                 width: "165px",
@@ -84,7 +85,6 @@ function Navbar() {
               href="/home"
               sx={{
                 textDecoration: "none",
-                listStyleType: "none",
               }}
             >
               <Typography
@@ -113,7 +113,6 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={{
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
@@ -135,7 +134,6 @@ function Navbar() {
               <Typography
                 variant="h6"
                 sx={(theme) => ({
-                  color: theme.palette.primary.main,
                   fontStyle: "normal",
                   fontWeight: "350",
                   fontSize: "17px",
@@ -150,114 +148,120 @@ function Navbar() {
         </List>
       </Box>
 
-      <List sx={(theme) => NavbarLiStyles(theme)}>
-        <ListItem>
-          <Link href="/home" sx={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
-              }}
-            >
-              home
-            </Typography>
-          </Link>
-        </ListItem>
+      {/* NAV */}
 
-        <ListItem>
-          <Link href="/articles" sx={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
-              }}
-            >
-              articles
-            </Typography>
-          </Link>
-        </ListItem>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-end",
+        }}
+      >
+        <List sx={(theme) => NavbarLiStyles(theme)}>
+          <ListItem>
+            <Link href="/home" sx={{ textDecoration: "none" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  color: theme.palette.text.primary,
+                }}
+              >
+                home
+              </Typography>
+            </Link>
+          </ListItem>
 
-        <ListItem>
-          <Link
-            href="#"
-            sx={{
-              textDecoration: "none",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={(theme) => ({
-                color: theme.palette.primary.main,
-                fontStyle: "normal",
-                fontWeight: "350",
-                fontSize: "17px",
-                lineHeight: "24px",
+          <ListItem>
+            <Link href="/articles" sx={{ textDecoration: "none" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  color: theme.palette.text.primary,
+                }}
+              >
+                articles
+              </Typography>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link
+              href="#"
+              sx={{
                 textDecoration: "none",
-              })}
+              }}
             >
-              karta
-            </Typography>
-          </Link>
-        </ListItem>
-      </List>
+              <Typography
+                variant="h6"
+                sx={(theme) => ({
+                  fontStyle: "normal",
+                  fontWeight: "350",
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  textDecoration: "none",
+                  color: theme.palette.text.primary,
+                })}
+              >
+                karta
+              </Typography>
+            </Link>
+          </ListItem>
+        </List>
 
-      <Box
-        sx={{
-          display: "none",
+        <Box
+          sx={{
+            display: "none",
 
-          [theme.breakpoints.down(750)]: {
-            display: "flex",
-          },
-        }}
-        onClick={handleClick}
-      >
-        <Image
-          priority
-          src="/images/menu.png"
-          alt="Menu"
-          width={24}
-          height={24}
-        />
-      </Box>
+            [theme.breakpoints.down(750)]: {
+              display: "flex",
+            },
+          }}
+          onClick={handleClick}
+        >
+          <Image
+            priority
+            src="/images/menu.png"
+            alt="Menu"
+            width={24}
+            height={24}
+          />
+        </Box>
 
-      <Box
-        sx={{
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#C7F5FF",
-          color: "text.primary",
-          borderRadius: 1,
-          position: "relative",
-          top: "-4px",
-        }}
-      >
-        <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-          {theme.palette.mode === "dark" ? (
-            <Image
-              priority
-              src="/images/dark.png"
-              alt="Dark Mood"
-              width={13}
-              height={14}
-            />
-          ) : (
-            <Image
-              priority
-              src="/images/light.png"
-              alt="Light Mood"
-              width={16}
-              height={17}
-            />
-          )}
-        </IconButton>
+        <Box
+          sx={{
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 1,
+            position: "relative",
+          }}
+        >
+          <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === "dark" ? (
+              <Image
+                priority
+                src="/images/dark.png"
+                alt="Dark Mood"
+                width={13}
+                height={14}
+              />
+            ) : (
+              <Image
+                priority
+                src="/images/light.png"
+                alt="Light Mood"
+                width={16}
+                height={17}
+              />
+            )}
+          </IconButton>
+        </Box>
       </Box>
     </Box>
   );

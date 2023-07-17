@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 
 export const ScrollOneStyles = (theme: Theme) => ({
   fontWeight: 700,
-  color: theme.palette.primary.main,
+  // color: theme.palette.primary.main,
   fontFamily: theme.typography.fontFamily,
   fontSize: "23px",
 });
@@ -16,7 +16,7 @@ export const ScrollOneContainerStyles = (theme: Theme) => ({
   height: "100vh",
   top: "20px",
   width: "100%",
-  backgroundColor: "#C7F5FF",
+  backgroundColor: theme.palette.primary.main,
 });
 
 export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
@@ -24,7 +24,7 @@ export const ScrollOneHeaderContainerStyles = (theme: Theme) => ({
   justifyContent: "center",
   width: "100%",
   height: "101px",
-  backgroundColor: "#C7F5FF",
+  backgroundColor: theme.palette.primary.main,
   display: "flex",
   alignItems: "center",
   whiteSpace: "wrap",
@@ -38,6 +38,4 @@ export const ScrollBox = (theme: Theme) => ({
   flexDirection: "row",
   width: "100%",
   height: "100%",
-  backgroundColor: "#C7F5FF",
-  color: "white",
 });

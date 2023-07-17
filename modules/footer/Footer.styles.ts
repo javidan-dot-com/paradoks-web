@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 
 export const FooterStyles = (theme: Theme) => ({
   fontWeight: 500,
-  color: theme.palette.primary.main,
+  // color: theme.palette.primary.main,
   fontFamily: theme.typography.fontFamily,
 });
 
@@ -17,5 +17,5 @@ export const FooterContainerStyles = (theme: Theme) => ({
   justifyItems: "center",
   height: "253px",
   width: "100%",
-  backgroundColor: "#C9FFD5",
+  backgroundColor: theme.palette.primary.main,
 });

@@ -2,7 +2,6 @@ import { Theme } from "@mui/material";
 
 export const ScrollTwoStyles = (theme: Theme) => ({
   fontWeight: 350,
-  color: "black",
   fontSize: "19px",
 
   fontFamily: theme.typography.fontFamily,
@@ -16,5 +15,5 @@ export const ScrollTwoContainerStyles = (theme: Theme) => ({
   paddingLeft: "4rem",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#E8FFD1",
+  backgroundColor: theme.palette.primary.main,
 });
